@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+
+    <title>ConsulTEC</title>
+ 
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/one-page-wonder.css" rel="stylesheet">
+    <link href="static/css/animate.css" rel="stylesheet">
+    <style type="text/css">
+        .style1
+        {
+            font-size: xx-large;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <span class="style1">&nbsp;::::SISTEMA DE ADMINISTRACIÓN DE LIBROS&nbsp; 
+        ::::::::<br />
+        <br />
+        </span>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

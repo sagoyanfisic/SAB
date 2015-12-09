@@ -16,7 +16,7 @@ Imports System.Data.SqlClient
         dap.Fill(ds, "login")
         Return ds
     End Function
-    Function guardarlibros(ByVal codigo As Integer, ByVal nombre As Integer, ByVal editar As Integer, ByVal idioma As Integer, ByVal estado As Integer) As DataSet
+    Function guardarlibros(ByVal codigo As String, ByVal nombre As String, ByVal editorial As String, ByVal idioma As String, ByVal estado As String) As DataSet
         Dim cnn As New SqlConnection(con)
         Dim dap As New SqlDataAdapter("guardarlibros", cnn)
         Dim ds As New DataSet
@@ -24,7 +24,7 @@ Imports System.Data.SqlClient
             .CommandType = CommandType.StoredProcedure
             .Parameters.Add("@cod_libro", SqlDbType.NChar, 10).Value = codigo
             .Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = nombre
-            .Parameters.Add("@edit", SqlDbType.VarChar, 50).Value = editar
+            .Parameters.Add("@edit", SqlDbType.VarChar, 50).Value = editorial
             .Parameters.Add("@idioma", SqlDbType.NChar, 10).Value = idioma
             .Parameters.Add("@estado", SqlDbType.NChar, 10).Value = estado
         End With

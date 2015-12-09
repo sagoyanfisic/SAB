@@ -36,32 +36,31 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre del libro :
                 </td>
                 <td>
-                    <asp:TextBox ID="txtproducto0" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="inputnombre" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    Nombre:</td>
+                    Editorial:</td>
                 <td class="style2">
-                    <asp:TextBox ID="txtproducto5" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="inputeditorial" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     Idioma:</td>
                 <td>
-                    <asp:TextBox ID="txtproducto1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="inputidioma" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
                     Estado:</td>
                 <td class="style2">
-                    <asp:TextBox ID="txtpu0" runat="server" Width="134px"></asp:TextBox>
+                    <asp:TextBox ID="inputestado" runat="server" Width="134px"></asp:TextBox>
                 </td>
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Línea:</td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 <td>
-                    <asp:TextBox ID="txtproducto2" runat="server"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
             </tr>
               <tr>
                 <td>
@@ -72,9 +71,9 @@
                     Descripcion</td>
                 
                 <td>
-                    <textarea ID="TextArea1" name="S1"></textarea></td>
+                    <textarea ID="inputdescripcion" name="S1"></textarea></td>
                 <td>
-                    <asp:Button ID="botonguardar" runat="server" Text="Guardar" />
+                    <asp:Button ID="botonsubmit" runat="server" Text="Guardar" />
                 </td>
             </tr>
         </table>

@@ -30,32 +30,32 @@
                 <td class="style3">
                     Código del libro :</td>
                 <td class="style2">
-                    <asp:TextBox ID="inputcodigo" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="inputcodigo" runat="server" ForeColor="Black"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre del libro :
                 </td>
                 <td>
-                    <asp:TextBox ID="inputnombre" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="inputnombre" runat="server" ForeColor="Black"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
                     Editorial:</td>
                 <td class="style2">
-                    <asp:TextBox ID="inputeditorial" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="inputeditorial" runat="server" ForeColor="Black"></asp:TextBox>
                 </td>
                 <td>
                     Idioma:</td>
                 <td>
-                    <asp:TextBox ID="inputidioma" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="inputidioma" runat="server" ForeColor="Black"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
                     Estado:</td>
                 <td class="style2">
-                    <asp:TextBox ID="inputestado" runat="server" Width="134px"></asp:TextBox>
+                    <asp:TextBox ID="inputestado" runat="server" Width="134px" ForeColor="Black"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
@@ -71,9 +71,9 @@
                     Descripcion</td>
                 
                 <td>
-                    <textarea ID="inputdescripcion" name="S1"></textarea></td>
+                    <textarea ID="inputdescripcion" name="S1" ForeColor="Black"></textarea></td>
                 <td>
-                    <asp:Button ID="botonsubmit" runat="server" Text="Guardar" />
+                    <asp:Button ID="botonsubmit" runat="server" ForeColor="Black" Text="Guardar" />
                 </td>
             </tr>
         </table>

@@ -55,7 +55,14 @@
                 <td>
                     Estado:</td>
                 <td class="style2">
-                    <asp:TextBox ID="inputestado" runat="server" Width="134px" ForeColor="Black"></asp:TextBox>
+                    <asp:DropDownList ID="selectestado" runat="server" 
+                        DataSourceID="SqlDataSource1" DataTextField="codigo_estado" 
+                        DataValueField="codigo_estado">
+                    </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:CONSULTORIAConnectionString %>" 
+                        SelectCommand="lstestado" SelectCommandType="StoredProcedure">
+                    </asp:SqlDataSource>
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>

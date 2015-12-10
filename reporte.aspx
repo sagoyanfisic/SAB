@@ -7,34 +7,31 @@
 &nbsp;&nbsp;&nbsp; &gt; Reporte de Libros
     </p>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
-            AllowSorting="True" AutoGenerateColumns="False" BackColor="#CCCCCC" 
-            BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" 
-            CellSpacing="2" DataSourceID="SqlDataSource1" ForeColor="Black">
-            <RowStyle BackColor="White" />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+            BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" 
+            CellPadding="3" DataSourceID="SqlDataSource1">
+            <RowStyle ForeColor="#000066" />
             <Columns>
                 <asp:BoundField DataField="cod_libro" HeaderText="cod_libro" 
                     SortExpression="cod_libro" />
                 <asp:BoundField DataField="descripcion" HeaderText="descripcion" 
                     SortExpression="descripcion" />
-                <asp:BoundField DataField="fecha_de_prestamo" HeaderText="fecha_de_prestamo" 
-                    SortExpression="fecha_de_prestamo" />
-                <asp:BoundField DataField="fecha_de_devolucion" HeaderText="fecha_de_devolucion" 
-                    SortExpression="fecha_de_devolucion" />
                 <asp:BoundField DataField="nombre_libro" HeaderText="nombre_libro" 
                     SortExpression="nombre_libro" />
+                <asp:BoundField DataField="editorial" HeaderText="editorial" 
+                    SortExpression="editorial" />
                 <asp:BoundField DataField="idioma" HeaderText="idioma" 
                     SortExpression="idioma" />
-                <asp:BoundField DataField="estado" HeaderText="estado" 
-                    SortExpression="estado" />
+                <asp:BoundField DataField="tipo_estado" HeaderText="tipo_estado" 
+                    SortExpression="tipo_estado" />
             </Columns>
-            <FooterStyle BackColor="#CCCCCC" />
-            <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
-            <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+            <FooterStyle BackColor="White" ForeColor="#000066" />
+            <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+            <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:CONSULTORIAConnectionString2 %>" 
+            ConnectionString="<%$ ConnectionStrings:CONSULTORIAConnectionString %>" 
             SelectCommand="lstlibros" SelectCommandType="StoredProcedure">
         </asp:SqlDataSource>
     </p>

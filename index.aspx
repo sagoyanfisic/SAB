@@ -35,13 +35,7 @@
                 <ul class="nav navbar-nav color3">
                 </ul>
                       <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="username" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <input type="text"  id="inputHelpBlock" class="form-control" name="password" placeholder="">
-                    </div>
-                    <button   id="inputHelpBlock" class="btn btn-success" onClick="location.href = 'default.aspx'" >Iniciar sesión</button>
+                    <a href=""><button   id="inputHelpBlock" class="btn btn-success" >Iniciar sesión</button>   
                 </form
             </div>
             <!-- /.navbar-collapse -->

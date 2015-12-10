@@ -31,4 +31,17 @@ Imports System.Data.SqlClient
         dap.Fill(ds, "guardardata")
         Return ds
     End Function
+    Function guardarusuarios(ByVal codigo_usuario As String, ByVal password As String, ByVal nombre As String) As DataSet
+        Dim cnn As New SqlConnection(con)
+        Dim dap As New SqlDataAdapter("guardarusuarios", cnn)
+        Dim ds As New DataSet
+        With dap.SelectCommand
+            .CommandType = CommandType.StoredProcedure
+            .Parameters.Add("@cod", SqlDbType.NChar, 10).Value = codigo_usuario
+            .Parameters.Add("@passwd", SqlDbType.VarChar, 50).Value = password
+            .Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = nombre
+        End With
+        dap.Fill(ds, "guardardatasession")
+        Return ds
+    End Function
 End Class

@@ -35,7 +35,8 @@
                 <ul class="nav navbar-nav color3">
                 </ul>
                       <form class="navbar-form navbar-right" role="search">
-                    <a href=""><button   id="inputHelpBlock" class="btn btn-success" >Iniciar sesión</button>   
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="login.aspx">Iniciar Sesión</asp:HyperLink>
+                     
                 </form
             </div>
             <!-- /.navbar-collapse -->

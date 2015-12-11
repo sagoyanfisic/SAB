@@ -56,8 +56,8 @@
                     Estado:</td>
                 <td class="style2">
                     <asp:DropDownList ID="selectestado" runat="server" 
-                        DataSourceID="SqlDataSource1" DataTextField="codigo_estado" 
-                        DataValueField="codigo_estado">
+                        DataSourceID="SqlDataSource1" DataTextField="tipo_estado" 
+                        DataValueField="tipo_estado">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                         ConnectionString="<%$ ConnectionStrings:CONSULTORIAConnectionString %>" 

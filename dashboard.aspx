@@ -55,7 +55,7 @@
                     <asp:HyperLink ID="usuarios" runat="server" NavigateUrl="~/sessionus.aspx">MANEJAR USUARIOS</asp:HyperLink>
                 </td>
                 <td class="style7">
-                    <asp:HyperLink ID="salir" runat="server">HyperLink</asp:HyperLink>
+                    <asp:HyperLink ID="salir" runat="server" NavigateUrl="~/index.aspx">SALIR DEL APLICATIVO</asp:HyperLink>
                 </td>
                 <td class="style7">
                 </td>
@@ -76,7 +76,9 @@
                         ImageUrl="~/static/img/usuario-registrado.jpg" Width="211px" />
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:Image ID="Image2" runat="server" Height="168px" 
+                        ImageUrl="~/static/img/salir.png" Width="209px" />
+                </td>
                 <td>
                     &nbsp;</td>
             </tr>
